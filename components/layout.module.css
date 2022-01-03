@@ -1,0 +1,11 @@
+.container{
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.nav{
+  padding-top: 30px;
+  /* background: navy; */
+  font-weight: 300;
+  text-align: center;
+}
