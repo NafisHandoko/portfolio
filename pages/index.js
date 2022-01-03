@@ -30,6 +30,7 @@ export default function Home() {
           <a className={styles.cta}>Contact Me</a>
         </div>
       </header>
+      <section></section>
 
       <footer className={styles.footer}>
         <a
