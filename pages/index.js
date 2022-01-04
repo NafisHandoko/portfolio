@@ -58,6 +58,41 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className={styles.portfolios}>
+        <h2 style={{textAlign: 'center'}}>My Portfolio</h2>
+        <div className={styles.portList}>
+          <div className={styles.portItem}>
+            <div className={styles.portImgDiv}>
+              <img className={styles.portImg} src="/img/gsheet.png" />
+            </div>
+            <div className={styles.portDesc}>
+              <h3>CRUD with Google Sheet API</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id fermentum fermentum nunc. Pellentesque a ante mattis molestie lorem arcu. Scelerisque neque eget ac a. Nunc tortor, donec imperdiet at. Nec amet laoreet nibh in tristique purus, interdum pulvinar sed. Suspendisse eros, at et porttitor accumsan tempor neque sed. Egestas posuere tempus nec elit fringilla pharetra fermentum. 
+              </p>
+              <div className={styles.portDemo}>
+                <a className={styles.demoIcon} href="https://github.com/nafishandoko"><i className="bi bi-github"></i></a>
+                <a className={styles.demoIcon} href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portItem}>
+            <div className={styles.portImgDiv}>
+              <img className={styles.portImg} src="/img/gsheet.png" />
+            </div>
+            <div className={styles.portDesc}>
+              <h3>CRUD with Google Sheet API</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id fermentum fermentum nunc. Pellentesque a ante mattis molestie lorem arcu. Scelerisque neque eget ac a. Nunc tortor, donec imperdiet at. Nec amet laoreet nibh in tristique purus, interdum pulvinar sed. Suspendisse eros, at et porttitor accumsan tempor neque sed. Egestas posuere tempus nec elit fringilla pharetra fermentum. 
+              </p>
+              <div className={styles.portDemo}>
+                <a className={styles.demoIcon} href="https://github.com/nafishandoko"><i className="bi bi-github"></i></a>
+                <a className={styles.demoIcon} href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer className={styles.footer}>
         <a
