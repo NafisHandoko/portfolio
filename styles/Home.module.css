@@ -56,3 +56,33 @@
   border-radius: 5px;
   display: inline-block;
 }
+
+.aboutSkills{
+  display: flex;
+  flex-direction: row;
+  padding-top: 80px;
+}
+
+.about{
+  flex: 1;
+  margin-right: 100px;
+}
+
+.skills{
+  flex: 1;
+}
+
+.skillList{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-gap: 10px;
+}
+
+.skill{
+  padding: 10px 10px 10px 10px;
+  /* border: 1px solid var(--light-color); */
+  /* border-radius: 5px; */
+  display: inline-block;
+  text-align: center;
+  font-size: 50px;
+}
