@@ -1,0 +1,16 @@
+[
+  {
+    "title":"CRUD with Google Sheet API",
+    "desc":"ini adalah deksripsi dari crud gsheet",
+    "repo":"https://github.com/nafisHandoko/gsheet-crud",
+    "demo":"https://nafishandoko.github.io/gsheet-crud/",
+    "img":"/img/gsheet.png"
+  },
+  {
+    "title":"Depression Calculator with Flask and LVQ",
+    "desc":"ini adalah deksripsi dari depr-calc",
+    "repo":"https://github.com/NafisHandoko/depr-calc",
+    "demo":"https://depr-calc.nafishandoko.repl.co/",
+    "img":"/img/gsheet.png"
+  }
+]

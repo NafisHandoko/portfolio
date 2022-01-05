@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/layout'
+import Data from '../data/portfolio.json'
 
 export default function Home() {
+  console.log(typeof Data);
   return (
     <Layout>
       <Head>
@@ -41,20 +43,20 @@ export default function Home() {
         <div className={styles.skills}>
           <h2>My Skills</h2>
           <div className={styles.skillList}>
-            <a href="#" className={styles.skill}><i class="devicon-html5-plain-wordmark colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-css3-plain-wordmark colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-sass-original colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-bootstrap-plain-wordmark colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-tailwindcss-plain colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-javascript-plain colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-jquery-plain-wordmark colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-react-original-wordmark colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-nextjs-original-wordmark"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-php-plain colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-mysql-plain-wordmark colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-python-plain-wordmark colored"></i></a>
-            <a href="#" className={styles.skill}><i class="devicon-flask-original-wordmark"></i></a>
-            <a href="#" className={styles.skill}> <i class="devicon-git-plain-wordmark colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-html5-plain-wordmark colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-css3-plain-wordmark colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-sass-original colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-bootstrap-plain-wordmark colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-tailwindcss-plain colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-javascript-plain colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-jquery-plain-wordmark colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-react-original-wordmark colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-nextjs-original-wordmark"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-php-plain colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-mysql-plain-wordmark colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-python-plain-wordmark colored"></i></a>
+            <a href="#" className={styles.skill}><i className="devicon-flask-original-wordmark"></i></a>
+            <a href="#" className={styles.skill}> <i className="devicon-git-plain-wordmark colored"></i></a>
           </div>
         </div>
       </section>
@@ -72,7 +74,7 @@ export default function Home() {
               </p>
               <div className={styles.portDemo}>
                 <a className={styles.demoIcon} href="https://github.com/nafishandoko"><i className="bi bi-github"></i></a>
-                <a className={styles.demoIcon} href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a className={styles.demoIcon} href="#"><i className="bi bi-box-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
@@ -87,7 +89,7 @@ export default function Home() {
               </p>
               <div className={styles.portDemo}>
                 <a className={styles.demoIcon} href="https://github.com/nafishandoko"><i className="bi bi-github"></i></a>
-                <a className={styles.demoIcon} href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a className={styles.demoIcon} href="#"><i className="bi bi-box-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
