@@ -2,10 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/layout'
-import Data from '../data/portfolio.json'
+import Portfolio from '../data/portfolio.json'
 
 export default function Home() {
-  console.log(typeof Data);
   return (
     <Layout>
       <Head>
@@ -63,36 +62,23 @@ export default function Home() {
       <section className={styles.portfolios}>
         <h2 style={{textAlign: 'center'}}>My Portfolio</h2>
         <div className={styles.portList}>
+        {Portfolio.map(data => (
           <div className={styles.portItem}>
             <div className={styles.portImgDiv}>
-              <img className={styles.portImg} src="/img/gsheet.png" />
+              <img className={styles.portImg} src={data.img} />
             </div>
             <div className={styles.portDesc}>
-              <h3>CRUD with Google Sheet API</h3>
+              <h3>{data.title}</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id fermentum fermentum nunc. Pellentesque a ante mattis molestie lorem arcu. Scelerisque neque eget ac a. Nunc tortor, donec imperdiet at. Nec amet laoreet nibh in tristique purus, interdum pulvinar sed. Suspendisse eros, at et porttitor accumsan tempor neque sed. Egestas posuere tempus nec elit fringilla pharetra fermentum. 
+                {data.desc} 
               </p>
               <div className={styles.portDemo}>
-                <a className={styles.demoIcon} href="https://github.com/nafishandoko"><i className="bi bi-github"></i></a>
-                <a className={styles.demoIcon} href="#"><i className="bi bi-box-arrow-up-right"></i></a>
+                <a className={styles.demoIcon} href={data.repo}><i className="bi bi-github"></i></a>
+                <a className={styles.demoIcon} href={data.demo}><i className="bi bi-box-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
-          <div className={styles.portItem}>
-            <div className={styles.portImgDiv}>
-              <img className={styles.portImg} src="/img/gsheet.png" />
-            </div>
-            <div className={styles.portDesc}>
-              <h3>CRUD with Google Sheet API</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id fermentum fermentum nunc. Pellentesque a ante mattis molestie lorem arcu. Scelerisque neque eget ac a. Nunc tortor, donec imperdiet at. Nec amet laoreet nibh in tristique purus, interdum pulvinar sed. Suspendisse eros, at et porttitor accumsan tempor neque sed. Egestas posuere tempus nec elit fringilla pharetra fermentum. 
-              </p>
-              <div className={styles.portDemo}>
-                <a className={styles.demoIcon} href="https://github.com/nafishandoko"><i className="bi bi-github"></i></a>
-                <a className={styles.demoIcon} href="#"><i className="bi bi-box-arrow-up-right"></i></a>
-              </div>
-            </div>
-          </div>
+        ))}
         </div>
       </section>
 
