@@ -25,7 +25,7 @@
 
 .code {
   background: #fafafa;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
@@ -53,7 +53,7 @@
   margin-top: 20px;
   padding: 15px 30px 15px 30px;
   border: 1px solid var(--light-color);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   display: inline-block;
 }
 
@@ -94,33 +94,10 @@
 }
 
 .portList{
-  display: flex;
-  flex-direction: column;
-}
-
-.portItem{
-  display: flex;
-  flex-direction: row;
-  margin: 30px 0;
-}
-
-.portImgDiv{
-  flex: 1;
-  /* margin: 0 60px 0 0; */
-  display: flex;
-  justify-content: center;
-}
-
-.portImg{
-  max-width: 70%;
-  border-radius: 5px;
-}
-
-.portDesc{
-  flex: 1;
-}
-
-.demoIcon{
-  font-size: 22px;
-  margin-right: 20px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
