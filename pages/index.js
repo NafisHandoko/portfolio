@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/layout'
-import Portfolio from '../data/portfolio.json'
+import Portdata from '../data/portfolio.json'
+import Portfolio from '../components/Portfolio/index'
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <header>
         <div className={styles.socialGroup}>
           <a className={styles.socialIcon} href="https://github.com/nafishandoko"><i className="bi bi-github"></i></a>
-          <a className={styles.socialIcon} href="#"><i className="bi bi-linkedin"></i></a>
+          <a className={styles.socialIcon} href="https://www.linkedin.com/in/nafis-arinda-rizky-putra-handoko-91542a21b/"><i className="bi bi-linkedin"></i></a>
           <a className={styles.socialIcon} href="https://instagram.com/nafishandoko"><i className="bi bi-instagram"></i></a>
           <a className={styles.socialIcon} href="mailto:naffisioner@gmail.com"><i className="bi bi-envelope"></i></a>
         </div>
@@ -33,13 +34,13 @@ export default function Home() {
         </div>
       </header>
       <section className={styles.aboutSkills}>
-        <div className={styles.about}>
+        <div className={styles.about} id="about">
           <h2>About Me</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id fermentum fermentum nunc. Pellentesque a ante mattis molestie lorem arcu. Scelerisque neque eget ac a. Nunc tortor, donec imperdiet at. Nec amet laoreet nibh in tristique purus, interdum pulvinar sed. Suspendisse eros, at et porttitor accumsan tempor neque sed. Egestas posuere tempus nec elit fringilla pharetra fermentum. Mattis nibh ante in nulla pellentesque sed blandit. Tristique in nunc vulputate sed varius nulla aliquam magna. Tempus in porta aliquet sollicitudin. Vitae arcu magnis amet nascetur proin lacus, facilisis.
           </p>
         </div>
-        <div className={styles.skills}>
+        <div className={styles.skills} id="skills">
           <h2>My Skills</h2>
           <div className={styles.skillList}>
             <a href="#" className={styles.skill}><i className="devicon-html5-plain-wordmark colored"></i></a>
@@ -59,25 +60,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.portfolios}>
+      <section className={styles.portfolios} id="portfolio">
         <h2 style={{textAlign: 'center'}}>My Portfolio</h2>
         <div className={styles.portList}>
-        {Portfolio.map(data => (
-          <div className={styles.portItem}>
-            <div className={styles.portImgDiv}>
-              <img className={styles.portImg} src={data.img} />
-            </div>
-            <div className={styles.portDesc}>
-              <h3>{data.title}</h3>
-              <p>
-                {data.desc} 
-              </p>
-              <div className={styles.portDemo}>
-                <a className={styles.demoIcon} href={data.repo}><i className="bi bi-github"></i></a>
-                <a className={styles.demoIcon} href={data.demo}><i className="bi bi-box-arrow-up-right"></i></a>
-              </div>
-            </div>
-          </div>
+        {Portdata.map(data => (
+          <Portfolio img={data.img} title={data.title} desc={data.desc} repo={data.repo} demo={data.demo} />
         ))}
         </div>
       </section>
@@ -88,7 +75,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Made with love by Nafis Handoko
+          Made with ❤️ by Nafis Handoko
         </a>
       </footer>
     </Layout>

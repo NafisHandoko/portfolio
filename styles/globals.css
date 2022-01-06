@@ -3,6 +3,7 @@
   --dark-color: #1D2D50;
   --body-fontSize: 18px;
   --sectionTitle-fontSize: 48px;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -39,7 +40,7 @@ header{
 }
 
 p{
-  font-size: 18px;
+  font-size: var(--body-fontSize);
 }
 
 h1{
@@ -52,5 +53,5 @@ h3{
 }
 
 h2{
-  font-size: 48px;
+  font-size: var(--sectionTitle-fontSize);
 }

@@ -1,0 +1,26 @@
+.portItem{
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+}
+
+.portImgDiv{
+  flex: 1;
+  /* margin: 0 60px 0 0; */
+  display: flex;
+  justify-content: center;
+}
+
+.portImg{
+  max-width: 70%;
+  border-radius: 5px;
+}
+
+.portDesc{
+  flex: 1;
+}
+
+.demoIcon{
+  font-size: 22px;
+  margin-right: 20px;
+}
