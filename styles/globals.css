@@ -28,6 +28,7 @@ a {
 
 ul,li{
     list-style: none;
+    padding: 0;
 }
 
 li{
@@ -45,12 +46,12 @@ p{
 }
 
 h1{
-  font-size: 96px;
+  font-size: clamp(3rem, 7vw, 96px);
   margin: 0;
 }
 
 h3{
-  font-size: 36px;
+  font-size: clamp(20px, 3vw - 4px, 36px);
 }
 
 h2{
@@ -59,4 +60,5 @@ h2{
 
 h4{
   font-size: 24px;
+  margin: 0;
 }

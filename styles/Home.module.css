@@ -95,9 +95,24 @@
 
 .portList{
   /* display: flex;
-  flex-wrap: wrap; */
+  flex-direction: column; */
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
+}
+
+@media (max-width:768px){
+  .aboutSkills{
+    flex-direction: column;
+  }
+  .socialGroup{
+    display: none;
+  }
+  .about{
+    margin-right: 0;
+  }
+  .mainHeader{
+    max-width: 100%;
+  }
 }

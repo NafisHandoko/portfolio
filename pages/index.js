@@ -64,7 +64,7 @@ export default function Home() {
         <h2 style={{textAlign: 'center'}}>My Portfolio</h2>
         <div className={styles.portList}>
         {Portdata.map(data => (
-          <Portfolio img={data.img} title={data.title} desc={data.desc} repo={data.repo} demo={data.demo} />
+          <Portfolio img={data.img} title={data.title} shortDesc={data.shortDesc} longDesc={data.longDesc} repo={data.repo} demo={data.demo} />
         ))}
         </div>
       </section>

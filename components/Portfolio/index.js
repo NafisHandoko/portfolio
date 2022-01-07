@@ -9,7 +9,7 @@ function Portfolio2(props){
       <div className={styles.portDesc}>
         <h3>{props.title}</h3>
         <p>
-          {props.desc} 
+          {props.longDesc} 
         </p>
         <div className={styles.portDemo}>
           <a className={styles.demoIcon} href={props.repo}><i className="bi bi-github"></i></a>
@@ -24,10 +24,11 @@ function Portfolio(props){
   return (
     <div className={styles.portItem2}>
       <figure className={styles.portFigure}>
-        <img className={styles.portImg2} src="https://via.placeholder.com/1920x1280/FCDAB7/1D2D50?Text=Digital.com" />
+        {/*<img className={styles.portImg2} src="https://via.placeholder.com/1366x768/FCDAB7/1D2D50?Text=halo" />*/}
+        <img className={styles.portImg2} src={props.img} />
         <figcaption className={styles.portFigcaption}>
           <h4>{props.title}</h4>
-          <p className={styles.portDesc}>{props.desc}</p>
+          <p className={styles.portDesc2}>{props.shortDesc}</p>
           <div className={styles.portDemo}>
             <a className={styles.demoIcon} href={props.repo}><i className="bi bi-github"></i></a>
             <a className={styles.demoIcon} href={props.demo}><i className="bi bi-box-arrow-up-right"></i></a>
