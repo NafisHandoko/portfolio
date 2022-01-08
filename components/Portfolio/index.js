@@ -22,7 +22,7 @@ function Portfolio2(props){
 
 function Portfolio(props){
   return (
-    <div className={styles.portItem2}>
+    <div className={styles.portItem2} data-aos="flip-left" data-aos-duration="3500">
       <figure className={styles.portFigure}>
         {/*<img className={styles.portImg2} src="https://via.placeholder.com/1366x768/FCDAB7/1D2D50?Text=halo" />*/}
         <img className={styles.portImg2} src={props.img} />

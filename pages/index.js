@@ -34,13 +34,13 @@ export default function Home() {
         </div>
       </header>
       <section className={styles.aboutSkills}>
-        <div className={styles.about} id="about">
+        <div className={styles.about} id="about" data-aos="fade-right">
           <h2>About Me</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id fermentum fermentum nunc. Pellentesque a ante mattis molestie lorem arcu. Scelerisque neque eget ac a. Nunc tortor, donec imperdiet at. Nec amet laoreet nibh in tristique purus, interdum pulvinar sed. Suspendisse eros, at et porttitor accumsan tempor neque sed. Egestas posuere tempus nec elit fringilla pharetra fermentum. Mattis nibh ante in nulla pellentesque sed blandit. Tristique in nunc vulputate sed varius nulla aliquam magna. Tempus in porta aliquet sollicitudin. Vitae arcu magnis amet nascetur proin lacus, facilisis.
           </p>
         </div>
-        <div className={styles.skills} id="skills">
+        <div className={styles.skills} id="skills" data-aos="fade-left">
           <h2>My Skills</h2>
           <div className={styles.skillList}>
             <a href="#" className={styles.skill}><i className="devicon-html5-plain-wordmark colored"></i></a>
