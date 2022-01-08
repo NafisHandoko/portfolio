@@ -39,6 +39,8 @@ li{
 header{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 80vh;
 }
 
 p{
@@ -61,4 +63,10 @@ h2{
 h4{
   font-size: 24px;
   margin: 0;
+}
+
+@media (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
 }
