@@ -4,8 +4,36 @@ import styles from '../styles/Home.module.css'
 import Layout from '../components/layout'
 import Portdata from '../data/portfolio.json'
 import Portfolio from '../components/Portfolio/index'
+import {useEffect, useRef} from 'react'
+import Typed from 'typed.js'
 
 export default function Home() {
+  // Create reference to store the DOM element containing the animation
+	const el = useRef(null);
+  // Create reference to store the Typed instance itself
+	const typed = useRef(null);
+
+  useEffect(() => {
+    const options = {
+    	strings: [
+        'Nafis Handoko',
+        'Web Developer'
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    };
+    
+    // elRef refers to the <span> rendered below
+    typed.current = new Typed(el.current, options);
+    
+    return () => {
+      // Make sure to destroy Typed instance during cleanup
+      // to prevent memory leaks
+      typed.current.destroy();
+    }
+  }, [])
+
   return (
     <Layout>
       <Head>
@@ -25,8 +53,8 @@ export default function Home() {
         </div>
         <div className={styles.mainHeader}>
           <p>Hi, i am</p>
-          <h1>Nafis Handoko</h1>
-          <h3>I am a Web Developer</h3>
+          <h1><span style={{ whiteSpace: 'pre' }} ref={el}></span></h1>
+          {/*<h3>I am a Web Developer</h3>*/}
           <p>
             I am a Frontend Developer and UI Designer that recently learning React and Redux for my current projects. Even though i'm new, i'll keep trying to improve my skills as time goes on. If you need me, feel free to contact me
           </p>
