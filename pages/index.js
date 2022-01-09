@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/layout'
 import Portdata from '../data/portfolio.json'
@@ -43,8 +44,15 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
       </Head>
-
-      <header>
+      <nav className={styles.indexNav}>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><Link href="/blog"><a>Blog</a></Link></li>
+        </ul>
+      </nav>
+      <header className={styles.indexHeader}>
         <div className={styles.socialGroup}>
           <a className={styles.socialIcon} href="https://github.com/nafishandoko"><i className="bi bi-github"></i></a>
           <a className={styles.socialIcon} href="https://www.linkedin.com/in/nafis-arinda-rizky-putra-handoko-91542a21b/"><i className="bi bi-linkedin"></i></a>
@@ -96,16 +104,6 @@ export default function Home() {
         ))}
         </div>
       </section>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://github.com/nafishandoko"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Made with ❤️ by Nafis Handoko
-        </a>
-      </footer>
     </Layout>
   )
 }

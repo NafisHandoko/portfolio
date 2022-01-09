@@ -3,16 +3,25 @@
   padding-right: 110px;
 }
 
-.nav{
-  padding-top: 30px;
-  /* background: navy; */
-  font-weight: 300;
-  text-align: center;
-}
-
 @media (max-width:768px){
   .container{
     padding-left: 40px;
     padding-right: 40px;
   }
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  /* border-top: 1px solid #eaeaea; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }

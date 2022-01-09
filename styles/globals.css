@@ -36,13 +36,6 @@ li{
   margin: 0 20px 0 20px;
 }
 
-header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 80vh;
-}
-
 p{
   font-size: var(--body-fontSize);
 }

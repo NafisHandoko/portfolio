@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-
+import Image from 'next/image'
 function Portfolio2(props){
   return (
     <div className={styles.portItem}>
@@ -25,7 +25,7 @@ function Portfolio(props){
     <div className={styles.portItem2} data-aos="flip-left" data-aos-duration="3500">
       <figure className={styles.portFigure}>
         {/*<img className={styles.portImg2} src="https://via.placeholder.com/1366x768/FCDAB7/1D2D50?Text=halo" />*/}
-        <img className={styles.portImg2} src={props.img} />
+        <img src={props.img} className={styles.portImg2}/>
         <figcaption className={styles.portFigcaption}>
           <h4>{props.title}</h4>
           <p className={styles.portDesc2}>{props.shortDesc}</p>
