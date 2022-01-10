@@ -1,0 +1,93 @@
+.blogItem{
+  /* width: calc(33.33333% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--dark-color);
+  border-radius: var(--border-radius);
+  z-index: 1;
+  transition: all .25s cubic-bezier(.02,.01,.47,1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+  /* border: 2px solid red; */
+  transition: all .25s cubic-bezier(.02,.01,.47,1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: var(--dark-color);
+  border-radius: var(--border-radius);
+}
+
+.blogItem:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.blogHead{
+  /* height: 220px;
+  position: relative;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  overflow: hidden; */
+  /* border: 2px solid blue; */
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+}
+
+.blogImgLink{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.blogImg{
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; */
+  object-fit: cover;
+  width: 100%;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.blogDesc{
+  /* padding-top: 30px;
+  flex: 1;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  background-color: var(--dark-color); */
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.blogDescLink{
+  /* padding: 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; */
+  padding: 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+/* @media (max-width:768px){
+  .blogItem{
+    width: calc(50% - 20px);
+    height: 420px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+} */

@@ -33,3 +33,17 @@
   text-align: center;
   justify-content: center;
 }
+
+.blogList{
+  /* justify-content: center;
+  margin: 0 -20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  padding-top: 40px; */
+  padding-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import Link from 'next/link'
 import styles from '../styles/Blog.module.css'
+import Blogs from '../components/Blog/index'
 
 export default function Blog(){
   return (
@@ -22,7 +23,11 @@ export default function Blog(){
         </div>
       </header>
       <Layout>
-        <h2>Blog</h2>
+        <article class={styles.blogList}>
+          <Blogs></Blogs>
+          <Blogs></Blogs>
+          <Blogs></Blogs>
+        </article>
       </Layout>
     </>
   )
