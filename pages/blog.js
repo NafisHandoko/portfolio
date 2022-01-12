@@ -3,8 +3,18 @@ import Layout from '../components/layout'
 import Link from 'next/link'
 import styles from '../styles/Blog.module.css'
 import Blogs from '../components/Blog/index'
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Blog(){
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+export default function Blog({allPostsData}){
   return (
     <>
       <Head>
@@ -24,9 +34,9 @@ export default function Blog(){
       </header>
       <Layout>
         <article class={styles.blogList}>
-          <Blogs></Blogs>
-          <Blogs></Blogs>
-          <Blogs></Blogs>
+        {allPostsData.map(({ id, date, title, img }) => (
+          <Blogs key={id} id={id} date={date} title={title} img={img}></Blogs>
+        ))}
         </article>
       </Layout>
     </>

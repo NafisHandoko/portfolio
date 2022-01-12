@@ -1,17 +1,22 @@
 import styles from './index.module.css'
+import Link from 'next/link'
 
-function Blog(){
+function Blog(props){
   return (
     <article class={styles.blogItem}>
       <div className={styles.blogHead}>
-        <a href="#" className={styles.blogImgLink}></a>
-        <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGxpbnV4fGVufDB8fHx8MTYzNDQ5MzcxMA&ixlib=rb-1.2.1&q=80&w=2000" className={styles.blogImg} />
+        <Link href={`/posts/${props.id}`}>
+          <a className={styles.blogImgLink}></a>
+        </Link>
+        <img src={props.img} className={styles.blogImg} />
       </div>
       <div className={styles.blogDesc}>
-        <a href="#" className={styles.blogDescLink}>
-          <h5>Menggunakan Debian Package / PPA daripada Snap Package</h5>
-          <span>12 Mei 2021</span>
-        </a>
+        <Link href={`/posts/${props.id}`}>
+          <a className={styles.blogDescLink}>
+            <h5>{props.title}</h5>
+            <span>{props.date}</span>
+          </a>
+        </Link>
       </div>
     </article>
   )
