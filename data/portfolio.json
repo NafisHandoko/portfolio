@@ -22,5 +22,13 @@
     "repo":"https://github.com/NafisHandoko/depr-calc",
     "demo":"https://depr-calc.nafishandoko.repl.co/",
     "img":"/img/portfolio/depr-calc.png"
+  },
+  {
+    "title":"gsheet-crud",
+    "shortDesc":"CRUD based Contact Book with Google Sheet API",
+    "longDesc":"lorem ipsum dolor sit amet",
+    "repo":"https://github.com/NafisHandoko/gsheet-crud",
+    "demo":"https://nafishandoko.github.io/gsheet-crud/",
+    "img":"/img/portfolio/gsheet-crud.png"
   }
 ]

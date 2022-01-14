@@ -73,7 +73,7 @@ export default function Home() {
         <div className={styles.about} id="about" data-aos="fade-right" data-aos-offset="250">
           <h2>About Me</h2>
           <p>
-            My journey in IT world started when I was 14. I was curious how to make games and found out that python was suitable and the easiest one to learn. I used pygame at that time. After a while I became interested in cyber security and use python for automation. I also learned about web exploitation and that&apos;s when I started to dive into web development, I started from php, after that I became interested in learning frontend development and try to master it. I started from using vanilla css and js then learned some frameworks and libraries like bootstrap, tailwindcss, jquery, reactjs, and now I&apos;m learning jamstack using nextjs for my personal projects.
+            My journey in IT world started when I was 14. I was curious how to make games and found out that python was suitable and the easiest one to learn. I used pygame at that time. After a while I became interested in cyber security and use python for automation. I also learned about web exploitation and that&apos;s when I started to dive into web development, I started from php, after that I became interested in learning frontend development and try to master it. I started from using Vanilla CSS and JS then learned some frameworks and libraries like Bootstrap, Tailwindcss, jQuery, Reactjs, and now I&apos;m learning Jamstack using Nextjs for my personal projects.
           </p>
         </div>
         <div className={styles.skills} id="skills" data-aos="fade-left" data-aos-offset="250">
