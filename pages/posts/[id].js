@@ -50,7 +50,10 @@ function Post({postData}){
       <header className={styles.postHeader} style={{backgroundImage: `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(${postData.img})`}}>
         <nav className={styles.postNav}>
           <Link href="/blog">
-            <a className={styles.backToIndex}><i className="bi bi-chevron-left"></i>&nbsp;&nbsp;Blog</a>
+            <a className={styles.backToIndex} style={{marginRight: 10}}><i className="bi bi-chevron-left"></i>&nbsp;&nbsp;Blog</a>
+          </Link>
+          <Link href="/">
+            <a className={styles.backToIndex}>My Portfolio</a>
           </Link>
         </nav>
         <div className={styles.mainHeader}>

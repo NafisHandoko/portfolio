@@ -45,11 +45,11 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
       </Head>
       <nav className={styles.indexNav}>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><Link href="/blog"><a>Blog</a></Link></li>
+        <ul className={styles.indexUl}>
+          <li className={styles.indexLi}><a href="#about">About</a></li>
+          <li className={styles.indexLi}><a href="#skills">Skills</a></li>
+          <li className={styles.indexLi}><a href="#portfolio">Portfolio</a></li>
+          <li className={styles.indexLi}><Link href="/blog"><a>Blog</a></Link></li>
         </ul>
       </nav>
       <header className={styles.indexHeader}>
@@ -64,19 +64,19 @@ export default function Home() {
           <h1><span style={{ whiteSpace: 'pre' }} ref={el}></span></h1>
           {/*<h3>I am a Web Developer</h3>*/}
           <p>
-            I am a Frontend Developer and UI Designer that recently learning React and Redux for my current projects. Even though i'm new, i'll keep trying to improve my skills as time goes on. If you need me, feel free to contact me
+            I am a 20 years old computer science student who loves to learn web development. now i am using Reactjs and Nextjs for my recent project. Even though i'm new, i'll keep trying to improve my skills as time goes on. If you need me or want to work with me, feel free to contact me
           </p>
           <a href="#" className={styles.cta}>Contact Me</a>
         </div>
       </header>
       <section className={styles.aboutSkills}>
-        <div className={styles.about} id="about" data-aos="fade-right">
+        <div className={styles.about} id="about" data-aos="fade-right" data-aos-offset="250">
           <h2>About Me</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id fermentum fermentum nunc. Pellentesque a ante mattis molestie lorem arcu. Scelerisque neque eget ac a. Nunc tortor, donec imperdiet at. Nec amet laoreet nibh in tristique purus, interdum pulvinar sed. Suspendisse eros, at et porttitor accumsan tempor neque sed. Egestas posuere tempus nec elit fringilla pharetra fermentum. Mattis nibh ante in nulla pellentesque sed blandit. Tristique in nunc vulputate sed varius nulla aliquam magna. Tempus in porta aliquet sollicitudin. Vitae arcu magnis amet nascetur proin lacus, facilisis.
+            My journey in IT world started when I was 14. I was curious how to make games and found out that python was suitable and the easiest one to learn. I used pygame at that time. After a while I became interested in cyber security and use python for automation. I also learned about web exploitation and that's when I started to dive into web development, I started from php, after that I became interested in learning frontend development and try to master it. I started from using vanilla css and js then learned some frameworks and libraries like bootstrap, tailwindcss, jquery, reactjs, and now I'm learning jamstack using nextjs for my personal projects.
           </p>
         </div>
-        <div className={styles.skills} id="skills" data-aos="fade-left">
+        <div className={styles.skills} id="skills" data-aos="fade-left" data-aos-offset="250">
           <h2>My Skills</h2>
           <div className={styles.skillList}>
             <a href="#" className={styles.skill}><i className="devicon-html5-plain-wordmark colored"></i></a>

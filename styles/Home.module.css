@@ -23,6 +23,16 @@
   text-align: center;
 }
 
+.indexUl, .indexLi{
+    list-style: none;
+    padding: 0;
+}
+
+.indexLi{
+  display: inline-block;
+  margin: 0 20px 0 20px;
+}
+
 .indexHeader{
   display: flex;
   flex-direction: row;

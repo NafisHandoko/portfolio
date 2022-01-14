@@ -29,7 +29,7 @@ export default function Blog({allPostsData}){
         </nav>
         <div className={styles.mainHeader}>
           <h2 className={styles.blogH2}>Nafis Blog</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo non nullam egestas vel lorem arcu.</p>
+          <p>This is the place where i share my knowledge about computer science stuff</p>
         </div>
       </header>
       <Layout>
@@ -42,5 +42,3 @@ export default function Blog({allPostsData}){
     </>
   )
 }
-
-// https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
