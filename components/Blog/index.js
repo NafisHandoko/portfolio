@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Blog(props){
   return (
-    <article class={styles.blogItem}>
+    <article className={styles.blogItem}>
       <div className={styles.blogHead}>
         <Link href={`/posts/${props.id}`}>
           <a className={styles.blogImgLink}></a>

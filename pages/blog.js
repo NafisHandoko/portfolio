@@ -33,7 +33,7 @@ export default function Blog({allPostsData}){
         </div>
       </header>
       <Layout>
-        <article class={styles.blogList}>
+        <article className={styles.blogList}>
         {allPostsData.map(({ id, date, title, img }) => (
           <Blogs key={id} id={id} date={date} title={title} img={img}></Blogs>
         ))}
