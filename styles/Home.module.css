@@ -18,7 +18,6 @@
 
 .indexNav{
   padding-top: 30px;
-  /* background: navy; */
   font-weight: 300;
   text-align: center;
 }
@@ -31,6 +30,22 @@
 .indexLi{
   display: inline-block;
   margin: 0 20px 0 20px;
+  position: relative;
+}
+
+.indexLi:after{
+  width: 0;
+  height: 1px;
+  background-color: var(--light-color);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  transition: width 0.2s ease-in-out;
+}
+
+.indexLi:hover:after{
+  width: 100%;
 }
 
 .indexHeader{
@@ -51,10 +66,15 @@
 .socialIcon{
   font-size: 22px;
   margin-bottom: 29px;
+  transition: all .2s ease-in-out;
+}
+
+.socialIcon:hover{
+  color: white;
 }
 
 .mainHeader{
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .cta{
@@ -63,6 +83,12 @@
   border: 1px solid var(--light-color);
   border-radius: var(--border-radius);
   display: inline-block;
+  transition: all .2s ease-in-out;
+}
+
+.cta:hover{
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 
 .aboutSkills{
@@ -88,11 +114,17 @@
 
 .skill{
   padding: 10px 10px 10px 10px;
-  /* border: 1px solid var(--light-color); */
-  /* border-radius: 5px; */
   display: inline-block;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
+  transition: all .2s ease-in-out;
+  border: solid var(--light-color);
+  border-width: 0;
+  border-radius: 5px;
+}
+
+.skill:hover{
+  border-width: 1px;
 }
 
 .portfolios{
