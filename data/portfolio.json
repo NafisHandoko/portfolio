@@ -38,5 +38,13 @@
     "repo":"https://github.com/NafisHandoko/random-quote",
     "demo":"https://nafishandoko.github.io/random-quote/",
     "img":"/img/portfolio/random-quote.png"
+  },
+  {
+    "title":"Cokro Collection",
+    "shortDesc":"Landing Page for Cokro Collection",
+    "longDesc":"lorem ipsum dolor sit amet",
+    "repo":"https://github.com/NafisHandoko/cokrocollection",
+    "demo":"https://nafishandoko.github.io/cokrocollection/",
+    "img":"/img/portfolio/cokrocollection.png"
   }
 ]
