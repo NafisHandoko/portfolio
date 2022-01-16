@@ -30,5 +30,13 @@
     "repo":"https://github.com/NafisHandoko/gsheet-crud",
     "demo":"https://nafishandoko.github.io/gsheet-crud/",
     "img":"/img/portfolio/gsheet-crud.png"
+  },
+  {
+    "title":"random-quote",
+    "shortDesc":"Random Quote Machine with jQuery, SASS, and Forismatic API",
+    "longDesc":"lorem ipsum dolor sit amet",
+    "repo":"https://github.com/NafisHandoko/random-quote",
+    "demo":"https://nafishandoko.github.io/random-quote/",
+    "img":"/img/portfolio/random-quote.png"
   }
 ]
