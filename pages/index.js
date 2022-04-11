@@ -83,16 +83,16 @@ export default function Home() {
             <a href="https://html.com/html5/" className={styles.skill}><i className="devicon-html5-plain-wordmark colored"></i></a>
             <a href="https://css3.com/" className={styles.skill}><i className="devicon-css3-plain-wordmark colored"></i></a>
             <a href="https://sass-lang.com/" className={styles.skill}><i className="devicon-sass-original colored"></i></a>
-            <a href="https://getbootstrap.com/" className={styles.skill}><i className="devicon-bootstrap-plain-wordmark colored"></i></a>
-            <a href="https://tailwindcss.com/" className={styles.skill}><i className="devicon-tailwindcss-plain colored"></i></a>
+		{/*<a href="https://getbootstrap.com/" className={styles.skill}><i className="devicon-bootstrap-plain-wordmark colored"></i></a>*/}
+            {/*<a href="https://tailwindcss.com/" className={styles.skill}><i className="devicon-tailwindcss-plain colored"></i></a>*/}
             <a href="https://www.javascript.com/" className={styles.skill}><i className="devicon-javascript-plain colored"></i></a>
             <a href="https://jquery.com/" className={styles.skill}><i className="devicon-jquery-plain-wordmark colored"></i></a>
             <a href="https://reactjs.org/" className={styles.skill}><i className="devicon-react-original-wordmark colored"></i></a>
             <a href="https://nextjs.org/" className={styles.skill}><i className="devicon-nextjs-original-wordmark"></i></a>
-            <a href="https://www.php.net/" className={styles.skill}><i className="devicon-php-plain colored"></i></a>
-            <a href="https://www.mysql.com/" className={styles.skill}><i className="devicon-mysql-plain-wordmark colored"></i></a>
+		{/*<a href="https://www.php.net/" className={styles.skill}><i className="devicon-php-plain colored"></i></a>*/}
+            {/*<a href="https://www.mysql.com/" className={styles.skill}><i className="devicon-mysql-plain-wordmark colored"></i></a>*/}
             <a href="https://www.python.org/" className={styles.skill}><i className="devicon-python-plain-wordmark colored"></i></a>
-            <a href="http://flask.palletsprojects.com/" className={styles.skill}><i className="devicon-flask-original-wordmark"></i></a>
+            {/*<a href="http://flask.palletsprojects.com/" className={styles.skill}><i className="devicon-flask-original-wordmark"></i></a>*/}
             <a href="https://git-scm.com/" className={styles.skill}> <i className="devicon-git-plain-wordmark colored"></i></a>
           </div>
         </div>
