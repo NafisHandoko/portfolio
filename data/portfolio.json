@@ -69,7 +69,7 @@
     "longDesc": "lorem ipsum dolor sit amet",
     "repo": "https://github.com/NafisHandoko/react-calculator",
     "demo": "https://nafishandoko-rcalculator.netlify.app/",
-    "img": "/img/portfolio/react-calculator.jpeg"
+    "img": "/img/portfolio/react-calculator.png"
   },
   {
     "title": "Drum Machine",
@@ -77,6 +77,46 @@
     "longDesc": "lorem ipsum dolor sit amet",
     "repo": "https://github.com/NafisHandoko/drum-machine",
     "demo": "https://nafishandoko-drummachine.netlify.app/",
-    "img": "/img/portfolio/drum-machine.jpeg"
+    "img": "/img/portfolio/drum-machine.png"
+  },
+  {
+    "title": "Gotravel",
+    "shortDesc": "Travel Landing Page with React & Tailwind",
+    "longDesc": "lorem ipsum dolor sit amet",
+    "repo": "https://github.com/NafisHandoko/gotravel/tree/jadi",
+    "demo": "https://react-gotravel.netlify.app/",
+    "img": "/img/portfolio/gotravel.png"
+  },
+  {
+    "title": "Artcody",
+    "shortDesc": "Artcody Landing Page with HTML, CSS, and AOS",
+    "longDesc": "lorem ipsum dolor sit amet",
+    "repo": "https://github.com/NafisHandoko/artcody-official",
+    "demo": "https://nafishandoko.github.io/artcody-official/",
+    "img": "/img/portfolio/artcody.png"
+  },
+  {
+    "title": "DeboksKas",
+    "shortDesc": "Financial Record App with Laravel",
+    "longDesc": "lorem ipsum dolor sit amet",
+    "repo": "https://github.com/benny-rs/deboks-kas",
+    "demo": "https://deboks-kas.000webhostapp.com/",
+    "img": "/img/portfolio/debokskas.png"
+  },
+  {
+    "title": "Fylo",
+    "shortDesc": "Fylo Landing Page with HTML, CSS for FrontendMentor submission",
+    "longDesc": "lorem ipsum dolor sit amet",
+    "repo": "https://github.com/NafisHandoko/fylo-landing-page",
+    "demo": "https://nafishandoko.github.io/fylo-landing-page/",
+    "img": "/img/portfolio/fylo.png"
+  },
+  {
+    "title": "HaDe",
+    "shortDesc": "HaDe Landingpage, Admin, and Customer side with React & Tailwind",
+    "longDesc": "lorem ipsum dolor sit amet",
+    "repo": "#",
+    "demo": "http://matpro.id",
+    "img": "/img/portfolio/hade.png"
   }
 ]

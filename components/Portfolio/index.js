@@ -30,8 +30,8 @@ function Portfolio(props){
           <h4>{props.title}</h4>
           <p className={styles.portDesc2}>{props.shortDesc}</p>
           <div className={styles.portDemo}>
-            <a className={styles.demoIcon} href={props.repo}><i className="bi bi-github"></i></a>
-            <a className={styles.demoIcon} href={props.demo}><i className="bi bi-box-arrow-up-right"></i></a>
+            <a className={styles.demoIcon} href={props.repo} target="_blank"><i className="bi bi-github"></i></a>
+            <a className={styles.demoIcon} href={props.demo} target="_blank"><i className="bi bi-box-arrow-up-right"></i></a>
           </div>
         </figcaption>
         <div className={styles.overlay}></div>

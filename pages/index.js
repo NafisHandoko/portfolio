@@ -18,7 +18,7 @@ export default function Home() {
     const options = {
     	strings: [
         'Nafis Handoko',
-        'Web Developer'
+        'Software Developer'
       ],
       typeSpeed: 50,
       backSpeed: 50,
@@ -65,7 +65,7 @@ export default function Home() {
           <h1><span style={{ whiteSpace: 'normal',wordWrap: 'break-word' }} ref={el}></span></h1>
           {/*<h3>I am a Web Developer</h3>*/}
           <p>
-            I am a 20 years old Computer Science student who loves to learn Web Development. Now i am using Reactjs and Nextjs for my recent project. Even though i&apos;m new, i&apos;ll keep trying to improve my skills as time goes on. If you need me or want to work with me, feel free to contact me
+            I am a 21 years old Computer Science student who loves to learn Web Development. Now i am using Reactjs and Nextjs for my recent project. Even though i&apos;m new, i&apos;ll keep trying to improve my skills as time goes on. If you need me or want to work with me, feel free to contact me
           </p>
           <a href="mailto:naffisioner@gmail.com" className={styles.cta}>Contact Me</a>
         </div>
