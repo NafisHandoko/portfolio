@@ -16,24 +16,25 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.indexNav{
+.indexNav {
   padding-top: 30px;
   font-weight: 300;
   text-align: center;
 }
 
-.indexUl, .indexLi{
-    list-style: none;
-    padding: 0;
+.indexUl,
+.indexLi {
+  list-style: none;
+  padding: 0;
 }
 
-.indexLi{
+.indexLi {
   display: inline-block;
   margin: 0 20px 0 20px;
   position: relative;
 }
 
-.indexLi:after{
+.indexLi:after {
   width: 0;
   height: 1px;
   background-color: var(--light-color);
@@ -44,18 +45,18 @@
   transition: width 0.2s ease-in-out;
 }
 
-.indexLi:hover:after{
+.indexLi:hover:after {
   width: 100%;
 }
 
-.indexHeader{
+.indexHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 80vh;
 }
 
-.socialGroup{
+.socialGroup {
   display: flex;
   flex-direction: column;
   margin-right: 74px;
@@ -63,21 +64,21 @@
   justify-content: center;
 }
 
-.socialIcon{
+.socialIcon {
   font-size: 22px;
   margin-bottom: 29px;
   transition: all .2s ease-in-out;
 }
 
-.socialIcon:hover{
+.socialIcon:hover {
   color: white;
 }
 
-.mainHeader{
+.mainHeader {
   max-width: 70%;
 }
 
-.cta{
+.cta {
   margin-top: 20px;
   padding: 15px 30px 15px 30px;
   border: 1px solid var(--light-color);
@@ -86,33 +87,33 @@
   transition: all .2s ease-in-out;
 }
 
-.cta:hover{
+.cta:hover {
   background-color: var(--light-color);
   color: var(--dark-color);
 }
 
-.aboutSkills{
+.aboutSkills {
   display: flex;
   flex-direction: row;
   padding-top: 80px;
 }
 
-.about{
+.about {
   flex: 1;
   margin-right: 100px;
 }
 
-.skills{
+.skills {
   flex: 1;
 }
 
-.skillList{
+.skillList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
   grid-gap: 10px;
 }
 
-.skill{
+.skill {
   padding: 10px 10px 10px 10px;
   display: inline-block;
   text-align: center;
@@ -123,17 +124,17 @@
   border-radius: 5px;
 }
 
-.skill:hover{
+.skill:hover {
   border-width: 1px;
 }
 
-.portfolios{
+.portfolios {
   padding-top: 80px;
   display: flex;
   flex-direction: column;
 }
 
-.portList{
+.portList {
   /* display: flex;
   flex-direction: column; */
   width: 100%;
@@ -142,17 +143,24 @@
   gap: 20px;
 }
 
-@media (max-width:768px){
-  .aboutSkills{
+@media (max-width:768px) {
+  .aboutSkills {
     flex-direction: column;
   }
-  .socialGroup{
+
+  .socialGroup {
     display: none;
   }
-  .about{
+
+  .about {
     margin-right: 0;
   }
-  .mainHeader{
+
+  .mainHeader {
     max-width: 100%;
+  }
+
+  .portList {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
 }
