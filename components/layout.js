@@ -7,7 +7,7 @@ export default function Layout({children, blog}){
       <footer className={styles.footer}>
         <div className={styles.socialGroup}>
           <a className={styles.socialIcon} href="https://github.com/nafishandoko"><i className="bi bi-github"></i></a>
-          <a className={styles.socialIcon} href="https://www.linkedin.com/in/nafis-arinda-rizky-putra-handoko-91542a21b/"><i className="bi bi-linkedin"></i></a>
+          <a className={styles.socialIcon} href="https://www.linkedin.com/in/nafishandoko"><i className="bi bi-linkedin"></i></a>
           <a className={styles.socialIcon} href="https://instagram.com/nafishandoko"><i className="bi bi-instagram"></i></a>
           <a className={styles.socialIcon} href="mailto:naffisioner@gmail.com"><i className="bi bi-envelope"></i></a>
         </div>
