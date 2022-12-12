@@ -59,6 +59,7 @@ export default function Home() {
           <a className={styles.socialIcon} href="https://www.linkedin.com/in/nafishandoko"><i className="bi bi-linkedin"></i></a>
           <a className={styles.socialIcon} href="https://instagram.com/nafishandoko"><i className="bi bi-instagram"></i></a>
           <a className={styles.socialIcon} href="mailto:naffisioner@gmail.com"><i className="bi bi-envelope"></i></a>
+          <a className={styles.socialIcon} href="https://dribbble.com/nafishandoko"><i className="bi bi-dribbble"></i></a>
         </div>
         <div className={styles.mainHeader}>
           <p>Hi, i am</p>
